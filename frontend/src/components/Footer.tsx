@@ -1,18 +1,9 @@
 function Footer() {
   return (
-    <footer style={styles.footer}>
-      <p>© 2026 Victor Kamau. All rights reserved.</p>
+    <footer className="bg-gray-950 text-gray-500 text-center py-6 border-t border-gray-800">
+      © 2026 Victor Kamau. All rights reserved.
     </footer>
   );
 }
-
-const styles = {
-  footer: {
-    textAlign: "center" as const,
-    padding: "20px",
-    backgroundColor: "#111",
-    color: "white",
-  },
-};
 
 export default Footer;

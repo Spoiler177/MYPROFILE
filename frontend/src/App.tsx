@@ -7,14 +7,14 @@ import Contact from "./pages/Contacts";
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-950 text-white font-sans">
       <Navbar />
       <Home />
       <About />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
