@@ -1,29 +1,28 @@
-function Home() {
+import { motion } from "framer-motion";
+
+export default function Home() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center text-center px-6"
-    >
-      <div>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          Hi, I'm <span className="text-green-400">Victor Kamau</span>
+    <section className="h-screen flex items-center justify-center text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-6xl font-bold mb-4">
+          Hi, I'm Victor 👋
         </h1>
 
-        <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">
-          Passionate Frontend Developer and Student building modern,
-          scalable web applications using React, TypeScript and
-          modern technologies.
+        <p className="text-xl mb-6">
+          Developer | Student | Builder of Modern Web Apps
         </p>
 
-        <a
-          href="#projects"
-          className="bg-green-500 hover:bg-green-600 text-black px-6 py-3 rounded-lg font-semibold transition"
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-white text-black px-6 py-3 rounded-full"
         >
           View My Work
-        </a>
-      </div>
+        </motion.button>
+      </motion.div>
     </section>
   );
 }
-
-export default Home;

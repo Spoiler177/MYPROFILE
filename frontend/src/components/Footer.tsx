@@ -1,7 +1,10 @@
 function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-500 text-center py-6 border-t border-gray-800">
-      © 2026 Victor Kamau. All rights reserved.
+    <footer className="bg-gray-900 text-white py-8 text-center">
+      <p>© {new Date().getFullYear()} Victor Kamau. All rights reserved.</p>
+      <p className="text-gray-400 mt-2">
+        Built with React & Tailwind CSS
+      </p>
     </footer>
   );
 }

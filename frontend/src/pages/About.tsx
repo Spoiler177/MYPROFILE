@@ -1,24 +1,25 @@
-function About() {
+import ScrollReveal from "../components/ScrollReveal";
+
+export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-gray-900">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-green-400">
+    <section className="py-20 px-6 max-w-5xl mx-auto">
+
+      <ScrollReveal>
+        <h2 className="text-3xl font-bold mb-6">
           About Me
         </h2>
+      </ScrollReveal>
 
-        <p className="text-gray-300 leading-relaxed mb-4">
-          I am a dedicated student developer based in Kenya with a
-          strong passion for technology and problem solving.
-        </p>
+      <ScrollReveal>
+        <p className="text-gray-600">
+I am a 16-year-old student based in Kenya with a strong interest in technology and creative digital work. I enjoy exploring web development and building ideas like websites, apps, and online platforms, especially those that can solve real problems or create opportunities for people. I am passionate about learning how the digital world works and how I can use it to build useful and meaningful projects.
 
-        <p className="text-gray-300 leading-relaxed">
-          My journey started with curiosity about how websites work.
-          Today, I build full-stack applications including e-commerce
-          platforms, weather systems, and health information platforms.
+I am also interested in freelancing and earning online, and I am actively developing my skills in frontend and backend development so I can become a full stack developer in the future. I enjoy experimenting with new tools, improving my coding abilities, and turning ideas into real working projects. Alongside coding, I have a creative side where I like designing logos, making advertisements, and thinking about UI/UX design to make my projects look professional and user-friendly.
+
+My goal is to keep growing my skills, gain experience through real projects, and eventually build a strong career in technology where I can work on impactful digital solutions.
         </p>
-      </div>
+      </ScrollReveal>
+
     </section>
   );
 }
-
-export default About;

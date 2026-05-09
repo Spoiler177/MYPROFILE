@@ -1,19 +1,23 @@
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Achievements from "./pages/Achievements";
+import Timeline from "./pages/Timeline";
+import Goals from "./pages/Goals";
 import Contact from "./pages/Contacts";
 
 function App() {
   return (
-    <div className="bg-gray-950 text-white font-sans">
+    <div>
       <Navbar />
       <Home />
       <About />
       <Projects />
+      <Achievements />
+      <Timeline />
+      <Goals />
       <Contact />
-      <Footer />
     </div>
   );
 }
