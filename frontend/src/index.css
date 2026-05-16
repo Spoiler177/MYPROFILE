@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  @apply transition-colors duration-300;
+  @apply min-h-screen bg-[#080808] text-slate-100 font-sans;
+  background-image: radial-gradient(circle at top, rgba(56,189,248,0.12), transparent 38%), radial-gradient(circle at bottom right, rgba(168,85,247,0.1), transparent 26%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(56,189,248,0.25);
+}
+
+button,
+a {
+  cursor: none;
+}
+
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.16s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.cursor-dot.active {
+  transform: translate3d(-50%, -50%, 0) scale(1.2);
+  background-color: rgba(56,189,248,0.16);
+  border-color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 768px) {
+  .cursor-dot {
+    display: none;
+  }
 }
